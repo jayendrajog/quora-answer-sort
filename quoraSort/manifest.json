@@ -1,0 +1,20 @@
+{
+
+	"manifest_version": 2,
+	"name": "Quora sort",
+	"version": "1",
+
+	"description": "Sorts quora answers by upvotes",
+	"author": "Jayendra Jog",
+	
+	"permissions": [ "activeTab" ],
+	
+	"content_scripts": [
+		{
+			"matches": ["https://www.quora.com/*"],
+			"exclude_matches": ["https://www.quora.com/"],
+			"js": ["quora-sort.js"]
+		}
+	]
+
+}
